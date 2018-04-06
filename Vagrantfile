@@ -13,7 +13,7 @@ VAGRANTFILE_API_VERSION = '2'
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'libvirt'
 
 # Check required plugins
-REQUIRED_PLUGINS_LIBVIRT = %w(vagrant-libvirt)
+REQUIRED_PLUGINS_LIBVIRT = %w(vagrant-libvirt vagrant-mutate)
 exit unless REQUIRED_PLUGINS_LIBVIRT.all? do |plugin|
   Vagrant.has_plugin?(plugin) || (
     puts "The #{plugin} plugin is required. Please install it with:"
