@@ -1,0 +1,19 @@
+
+[glance]
+auth_strategy = noauth
+[neutron]
+auth_strategy = noauth
+[database]
+connection = mysql+pymysql://ironic:ironic@192.168.99.11/ironic
+[DEFAULT]
+auth_strategy = noauth
+enabled_drivers = pxe_ssh, agent_ssh, fake
+pecan_debug = true
+verbose = true
+debug = true
+[oslo_messaging_rabbit]
+rabbit_host = 192.168.99.11
+rabbit_userid = ironic
+rabbit_password = ironic
+[cors]
+allowed_origin = http://localhost:8000

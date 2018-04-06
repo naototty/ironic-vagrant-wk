@@ -1,4 +1,4 @@
-Ironic
+Ironic (mitaka-eol branch)
 ======
 
 Ironic is an integrated OpenStack project which aims to provision bare

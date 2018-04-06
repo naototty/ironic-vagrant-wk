@@ -1,0 +1,12 @@
+diff --git a/vagrant.yaml b/vagrant.yaml
+index 055a4a9..431517a 100644
+--- a/vagrant.yaml
++++ b/vagrant.yaml
+@@ -11,6 +11,7 @@
+ #
+ - hosts: ironic
+   sudo: yes
++  user: vagrant
+   tasks:
+     ############################################################################
+     # APT Updates

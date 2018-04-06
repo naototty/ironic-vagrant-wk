@@ -11,6 +11,7 @@
 #
 - hosts: ironic
   sudo: yes
+  user: vagrant
   tasks:
     ############################################################################
     # APT Updates
